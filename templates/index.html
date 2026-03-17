@@ -1,42 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Restaurant Reservation</title>
-</head>
-
-<body>
-
 <h1>Reserve a Table</h1>
 
 <form action="/reserve" method="POST">
 
-Name<br>
-<input name="name" required><br><br>
+Name:<br>
+<input name="name" required><br>
 
-Phone<br>
-<input name="phone" required><br><br>
+Phone:<br>
+<input name="phone" required><br>
 
-Date<br>
-<input type="date" name="date" required><br><br>
+Email:<br>
+<input name="email" required><br>
 
-Time<br>
+Date:<br>
+<input type="date" name="date" required><br>
+
+Time:<br>
 <select name="time">
 <option>17:00</option>
 <option>18:00</option>
 <option>19:00</option>
 <option>20:00</option>
-</select><br><br>
+</select><br>
 
-Guests<br>
+Guests:<br>
 <input type="number" name="guests" min="1" max="10"><br><br>
 
 <button type="submit">Reserve</button>
 
 </form>
 
-<br><br>
-
-<a href="/admin">Admin Page</a>
-
-</body>
-</html>
+<br>
+<a href="/admin">Admin</a>

@@ -1,36 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Admin</title>
-</head>
-
-<body>
-
 <h1>Reservations</h1>
 
 <table border="1">
-
 <tr>
 <th>Name</th>
 <th>Phone</th>
+<th>Email</th>
 <th>Date</th>
 <th>Time</th>
 <th>Guests</th>
+<th>Status</th>
 </tr>
 
-{% for r in reservations %}
-
+{% for r in rows %}
 <tr>
 <td>{{ r[1] }}</td>
 <td>{{ r[2] }}</td>
 <td>{{ r[3] }}</td>
 <td>{{ r[4] }}</td>
 <td>{{ r[5] }}</td>
+<td>{{ r[6] }}</td>
+<td>{{ r[8] }}</td>
 </tr>
-
 {% endfor %}
-
 </table>
-
-</body>
-</html>
